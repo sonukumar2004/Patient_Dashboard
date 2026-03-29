@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F6F7FB;
+  --white: #FFFFFF;
+  --teal: #3A9D8F;
+  --teal-light: #E8F6F4;
+  --purple: #7B61FF;
+  --pink-line: #E85B8A;
+  --text-primary: #1A1A2E;
+  --text-secondary: #667085;
+  --border: #E4E7EE;
+  --selected-bg: #E8F2FF;
+  --card-blue: #EEF3FF;
+  --card-pink: #FFF0F3;
+  --card-red: #FFF5F5;
+  --radius: 16px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: 'Manrope', sans-serif;
+  cursor: pointer;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
